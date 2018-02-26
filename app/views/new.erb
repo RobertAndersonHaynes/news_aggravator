@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>News Aggregator</title>
+  </head>
+
+  <body>
+    <h2>News Aggregator</h2>
+    <h3>Submit a New Article</h3>
+
+
+
+    <form action="/articles/new" method="post">
+      <label for="article_title">Add New Article Title:</label>
+      <input type="text" id="Title" name="article_title" >
+      <br>
+      <label for="article_url">Add New Article URL:</label>
+      <input type="text" id="URL" name="article_url" >
+      <br>
+      <label for="article_description">Add New Article Description:</label>
+      <input type="text"  id="Description" name="article_description" >
+
+      <input type="submit" id="Submit" value="submit">
+    </form>
+
+    <p><a href="/articles">Show me the articles</a></p>
+    <p><a href="/">Take Me Home</a></p>
+  </body>
+</html>

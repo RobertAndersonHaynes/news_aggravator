@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>News Aggregator</title>
+  </head>
+
+  <body>
+    <h2>News Aggregator</h2>
+    <h3>Check Out Some User Submitted Articles</h3>
+
+<ul>
+
+  <% @articles.each do |article| %>
+
+  <ul>
+    <li><%= "Article Title: #{article['title']}" %></li>
+    <li>Article URL:
+    <a href="<%=article['url']%>" target="_blank"><%=article['url']%></a></li>
+    <li><%= "Article Description: #{article['description']}" %></li>
+    <br>
+  </ul>
+    <% end %>
+
+
+
+</ul>
+
+  <p><a href="/articles/new">Upload a new article</a></p>
+  <p><a href="/">Take Me Home</a></p>
+</body>
+</html>

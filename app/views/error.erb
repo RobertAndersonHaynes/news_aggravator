@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>News Aggregator</title>
+  </head>
+
+  <body>
+    <h1>Error! Am I showing??</h1>
+    <h2>News Aggregator</h2>
+    <h3>Submit a New Article</h3>
+
+
+
+    <form action="/articles/new" method="post">
+      <label for="article_title">Add New Article Title:</label>
+      <input type="text" id=<"article_title"> name=<%= @article_title%> required>
+      <br>
+      <label for="article_url">Add New Article URL:</label>
+      <input type="url" id="article_url" name="article_url" required>
+      <br>
+      <label for="article_description">Add New Article Description:</label>
+      <input type="text" minlength=20 id="article_description" name="article_description"  value="<%@article_description%>" required>
+
+      <input type="submit">
+    </form>
+
+    <p><a href="/">Take Me Home</a></p>
+  </body>
+</html>
